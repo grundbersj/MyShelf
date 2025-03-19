@@ -1,0 +1,57 @@
+﻿@page
+@model MyShelf_Web.Pages.Account.RegisterModel
+@{
+}
+
+<div class="row align-content-center">
+	<div class="col-12">
+		<label class="fs-1">Register</label>
+	</div>
+</div>
+<form method="post">
+	<div class="row">
+		<div class="col-4">
+			<label asp-for="NewUser.FirstName" class="form-label"></label>"
+		</div>
+		<div class="col-8">
+			<input asp-for="NewUser.FirstName" type="text" class="form-control" />
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-4">
+			<label asp-for="NewUser.LastName" class="form-label"></label>"
+		</div>
+		<div class="col-8">
+			<input asp-for="NewUser.LastName" type="text" class="form-control" />
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-4">
+			<label asp-for="NewUser.Email" class="form-label"></label>"
+		</div>
+		<div class="col-8">
+			<input asp-for="NewUser.Email" type="text" class="form-control" />
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-4">
+			<label asp-for="NewUser.Password" class="form-label"></label>"
+		</div>
+		<div class="col-8">
+			<input asp-for="NewUser.ConfirmPassword" type="password" class="form-control" />
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-4">
+			<label asp-for="NewUser.ConfirmPassword" class="form-label"></label>"
+		</div>
+		<div class="col-8">
+			<input asp-for="NewUser.ConfirmPassword" type="password" class="form-control" />
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-12">
+			<button type="submit" class="btn btn-primary" class="form-control"/>
+		</div>
+	</div>
+</form>
